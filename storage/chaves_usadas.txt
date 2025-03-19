@@ -1,0 +1,1 @@
+{"chave":"SKF2WFRR7A896NIW","validade_dias":30,"data_criacao":"2025-03-14 03:47:20","usado":true,"user_id":"1","data_ativacao":"2025-03-14 03:50:57"}
