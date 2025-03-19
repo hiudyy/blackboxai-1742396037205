@@ -1,0 +1,530 @@
+:root {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #ffffff;
+    --accent-color: #2563eb;
+    --danger-color: #e74c3c;
+    --success-color: #2ecc71;
+    --border-color: #333333;
+    --input-bg: #2d2d2d;
+    --link-color: #2563eb;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: var(--bg-secondary) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.card-header h3 {
+    color: #ffffff;
+}
+
+.form-control {
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    color: #b3b3b3;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.form-control:focus {
+    background-color: var(--input-bg);
+    border-color: var(--accent-color);
+    color: #b3b3b3;
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+.form-control::placeholder {
+    color: #b3b3b3;
+    opacity: 0.7;
+}
+
+.form-label {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: #666666;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.btn-secondary:hover {
+    background-color: #666666;
+    transform: none;
+}
+
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+.alert-danger {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #ffffff;
+    border: 1px solid var(--danger-color);
+}
+
+.alert-success {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #ffffff;
+    border: 1px solid var(--success-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-color);
+    opacity: 0.8;
+}
+
+.text-center p {
+    color: #ffffff;
+}
+
+/* Otimizações para mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .card {
+        margin: 10px 0;
+        border-radius: 8px;
+    }
+    
+    .form-control {
+        font-size: 16px; /* Previne zoom em iOS */
+        padding: 8px 12px;
+        height: auto;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        height: auto;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
+    .table-responsive {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .table td, .table th {
+        padding: 8px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .modal-content {
+        border-radius: 8px;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
+
+    .input-group {
+        flex-wrap: nowrap;
+    }
+
+    .input-group > .form-control {
+        width: 1%;
+        flex: 1 1 auto;
+    }
+
+    .gerar-chave-container {
+        width: 100%;
+        max-width: 350px;
+        padding: 0 10px;
+    }
+
+    .alert {
+        padding: 8px 12px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .btn-system {
+        height: 32px !important;
+        padding: 4px 8px !important;
+        font-size: 0.8rem !important;
+        min-width: 80px !important;
+    }
+    
+    .navbar .btn-system {
+        height: 28px !important;
+        padding: 2px 6px !important;
+        font-size: 0.75rem !important;
+        min-width: 70px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 375px) {
+    .btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .table td, .table th {
+        padding: 6px;
+        font-size: 13px;
+    }
+    
+    .navbar .btn-system {
+        height: 26px !important;
+        padding: 1px 4px !important;
+        font-size: 0.7rem !important;
+        min-width: 60px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+/* Melhorias de touch para dispositivos móveis */
+@media (hover: none) and (pointer: coarse) {
+    .btn, 
+    .nav-link,
+    .form-control,
+    select,
+    input[type="submit"],
+    input[type="button"] {
+        min-height: 44px; /* Tamanho mínimo recomendado para alvos touch */
+    }
+
+    .table td a,
+    .table td button {
+        padding: 8px 12px;
+        display: inline-block;
+    }
+}
+
+/* Fix para iOS input zoom */
+@supports (-webkit-touch-callout: none) {
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    input[type="tel"],
+    select,
+    textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.form-control.is-invalid {
+    border-color: var(--danger-color);
+    background-image: none;
+}
+
+.form-control.is-invalid:focus {
+    border-color: var(--danger-color);
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25);
+}
+
+.invalid-feedback {
+    color: var(--danger-color);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+/* Estilos do Modal */
+.modal-content {
+    background-color: var(--bg-secondary);
+    color: #ffffff;
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+.modal-title {
+    color: #ffffff;
+}
+
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.modal label.fw-bold {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.modal-body div {
+    color: #ffffff;
+}
+
+/* Botões do Modal */
+.modal .btn-secondary {
+    background-color: #4a5056;
+    border-color: #4a5056;
+    color: #ffffff;
+}
+
+.modal .btn-secondary:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.modal .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.modal .btn-primary:hover {
+    background-color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+}
+
+/* Estilo padrão para botões do sistema */
+.btn-system {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    min-width: 100px;
+}
+
+/* Ajuste para botões na barra de navegação */
+.navbar .btn-system {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    min-width: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-whatsapp {
+    padding: 6px 12px;
+    min-width: auto;
+}
+
+/* Ajuste para botões em tabelas */
+.table .btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    min-width: 100px;
+}
+
+/* Ajuste para botões em grupos */
+.btn-group .btn {
+    min-width: auto;
+}
+
+/* Estilos para layout compacto */
+.container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.card {
+    margin-bottom: 0.75rem;
+}
+
+.card-body {
+    padding: 0.75rem;
+}
+
+.mb-4 {
+    margin-bottom: 0.75rem !important;
+}
+
+.mt-4 {
+    margin-top: 0.75rem !important;
+}
+
+.table td, .table th {
+    padding: 0.4rem 0.5rem;
+}
+
+.btn-system {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.nav-tabs .nav-link {
+    padding: 0.25rem 0.5rem;
+}
+
+.form-control {
+    padding: 0.25rem 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 0.5rem !important;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem !important;
+}
+
+.table-responsive {
+    margin-bottom: 0;
+}
+
+/* Estilos para forçar modo desktop em dispositivos móveis */
+@media only screen and (max-width: 1023px) {
+    body, html {
+        min-width: 1024px !important;
+        width: 1024px !important;
+        overflow-x: auto !important;
+        margin: 0 auto !important;
+    }
+    
+    .container, .container-fluid, .container-lg, .container-md, 
+    .container-sm, .container-xl, .container-xxl {
+        min-width: 1024px !important;
+        max-width: none !important;
+        width: 1024px !important;
+    }
+    
+    .modal, .modal-dialog {
+        min-width: 1024px !important;
+        max-width: none !important;
+    }
+    
+    .modal-content {
+        min-width: 800px !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+    }
+    
+    .row {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* Ajustes para tabelas */
+    .table-responsive {
+        overflow-x: visible !important;
+    }
+    
+    /* Ajustes para formulários */
+    .form-control, .form-select {
+        max-width: none !important;
+    }
+    
+    /* Ajustes para botões em dispositivos móveis */
+    .btn {
+        white-space: normal !important;
+    }
+} 
+
+/* Estilos específicos para páginas de login e cadastro em dispositivos móveis */
+body.login-page, body.cadastro-page {
+    min-width: auto !important;
+    width: auto !important;
+    overflow-x: hidden !important;
+    transform-origin: top center;
+    transform: scale(0.8);
+}
+
+@media only screen and (max-width: 767px) {
+    body.login-page .container, 
+    body.cadastro-page .container {
+        min-width: auto !important;
+        width: 100% !important;
+        padding: 0 15px;
+    }
+    
+    body.login-page .card,
+    body.cadastro-page .card {
+        margin-top: 10px;
+    }
+    
+    body.login-page .col-md-6,
+    body.cadastro-page .col-md-6 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+} 
