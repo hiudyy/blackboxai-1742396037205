@@ -1,0 +1,13 @@
+id|nome_completo|telefone|usuario|senha|created_at|is_admin|bloqueio|bloqueio_manual|trocar_senha
+1|Cássio Amorim Rodrigues|(71) 99405-3838|cassio|$2y$12$4hnxJ8eVYPCZJxVx.1TIrukPIzAPMmCRtfSGVKM4OYtqAZnXst3Zi|2025-03-14 00:03:18|true|0|0|0
+4|Lucas Moreira Araújo |(71) 99101-7272|Lucasmr11|$2y$10$7V6TKj8r7IxabY9OS4Pun.6MpCMlqviLCH8VDCvir4KHMAVWMUjLm|2025-03-16 08:03:20|false|0|0|0
+5|Luís Murilo Souza Cerqueira|(71) 98322-3127|Murilo58souza|$2y$10$RSp/fOCJ8KaoGzKklq8pSesub0pxtaRzBIFJz3IZccRcD3caLIHjO|2025-03-16 12:56:01|false|0|0|0
+6|Paulo Alexandre Coelho Silva Dos Santos |(71) 99233-4102|Paulo|$2y$10$lZfcTueh/Qn.0CP2z2VltOkO5ikQ1hIojYj4VGZBVOmepJFPeK4bq|2025-03-16 13:10:39|false|0|0|0
+7|Victor Nunes Correia Da Silva |(71) 99721-3419|ArcanjoCred|$2y$10$Ey05gZFGqgfOJ8Zu0Bh/LOZ9gCYTjEbLBzN5dQPQV/KwgUrGTbYm.|2025-03-16 15:25:38|false|1|0|0
+9|Igor Heitor Santos Dos Santos |(71) 98791-9134|HSolucoes|$2y$10$syRJThNq/dqZXKjjX22KSuT1E8RIpvHqkcvjagHw633Zc8lpP639e|2025-03-16 20:48:19|false|0|0|0
+10|Uberbet Valério Junior|(71) 99269-1299|Uberbetjr|$2y$10$UXpH9LXnamgw5EgWSsHoM.Uvf.Ph1F1Crw6rRBJfex0pMOvanbxgi|2025-03-17 14:50:52|false|1|0|0
+11|Yuri Silva |(71) 98247-7497|yurisilva|$2y$10$v9MF3xiMpRzTbR/a0Mr0FOI4hrKCPiROJ9bUA0ay6vUNoWiX3gq8e|2025-03-17 16:00:29|false|1|0|0
+12|Vitor|(71) 99195-9109|vitorcx45|$2y$10$IrolGz.V6.X455qoASkFiO740eZbikr0ucWmnUWQqjpqK7/NUjUiC|2025-03-17 16:33:22|false|1|0|0
+16|Koskok|(12) 31231-2312|KOSKOK|$2y$10$1NC6gWgSSLy5w3P2RKLiie4r6XYB1Z8q2eysc7hNQEiLjzOqFAf3e|2025-03-18 02:33:12|false|0|0|0
+17|Elyson Luiz|(75) 99189-0928|elyson|$2y$10$DoMMffPqy0OgS7zDMl4Q8Ofbq5smqPHDpzQ/SR5vOGujnz2r8aKN2|2025-03-18 13:08:05|false|0|0|0
+18|Sla|(55) 55555-5555|sla|$2y$10$H8JbaoOmMxZ7WeHdavbxbehPROZ.bhOc7RDZay5NHrDm5.ui9Fg2y|2025-03-18 23:03:16|false|1|0|0
